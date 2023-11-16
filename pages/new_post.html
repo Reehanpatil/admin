@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin</title>
+    <!-- link icons  -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/adminstyle.css" />
+  </head>
+  <body>
+    <style></style>
+
+    <header class="header">
+      <div class="logo">admin</div>
+      <div class="search"><input type="text" placeholder="search" /></div>
+      <div class="btn logout">log out</div>
+      <ion-icon name="logo-instagram" class="btn-icon"></ion-icon>
+    </header>
+
+    <div class="flex">
+      <div class="left">
+        <div class="navbar">
+          <a href="../index.html">home</a>
+          <a href="profile.html">profile</a>
+          <a href="new_post.html">new post</a>
+          <a href="admin_contact.html">contact</a>
+          <a href="noticebord.html">notice bord</a>
+        </div>
+      </div>
+
+      <style>
+        .post_form form {
+          width: 110rem;
+          background-color: #fff;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          border: 0.1rem solid rgba(0, 0, 0, 0.1);
+          border-radius: 0.5rem;
+          /* height: 40rem; */
+          margin: 3rem;
+          align-items: center;
+          padding: 2rem;
+          text-align: center;
+        }
+        .post_form form h1 {
+          text-align: center;
+          font-size: 2.5rem;
+          color: #130f40;
+          font-weight: bolder;
+          margin-bottom: 3rem;
+        }
+        .post_form form .job-form-flex {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+          gap: 2rem;
+        }
+        .post_form form .job-form-flex h4 {
+          font-size: 1.8rem;
+          color: #130f40;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        .post_form form .job-form-flex .box {
+          width: 30rem;
+          height: 4rem;
+          padding: 1rem 2rem;
+          font-size: 1.5rem;
+          background-color: #fff;
+          border: 0.1rem solid rgba(0, 0, 0, 0.1);
+          border-radius: 0.5rem;
+        }
+      </style>
+
+      <section class="right">
+        <div class="post_form">
+          <form action="#">
+            <h1>new post apply</h1>
+            <div class="job-form-flex">
+              <div>
+                <h4>categoury</h4>
+                <select class="box">
+                  <option value="">select</option>
+                  <option value="Latest News / Jobs">Latest News / Jobs</option>
+                  <option value="Adhar Card Services">
+                    Adhar Card Services
+                  </option>
+                  <option value="Scholarship Portal">Scholarship Portal</option>
+                  <option value="All Indian Exams">All Indian Exams</option>
+                  <option value="Latest News / Jobs">Latest News / Jobs</option>
+                  <option value="Scholarship Portal">Scholarship Portal</option>
+                  <option value="All Indian Exams">All Indian Exams</option>
+                </select>
+              </div>
+
+              <div>
+                <h4>job title name</h4>
+                <input type="text" placeholder="job title" class="box" />
+              </div>
+            </div>
+
+            <style>
+              .post_form_grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                gap: 2rem;
+              }
+              .post_form_grid h2 {
+                font-size: 1.8rem;
+                color: #130f40;
+                font-weight: bold;
+                margin-top: 2rem;
+              }
+              .post_form_grid .box {
+                width: 30rem;
+                height: 4rem;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                background-color: #fff;
+                border: 0.1rem solid rgba(0, 0, 0, 0.1);
+                border-radius: 0.5rem;
+                margin: 1rem;
+              }
+            </style>
+
+            <div class="post_form_grid">
+              <div style="display: flex; flex-direction: column">
+                <h2>Applicaton Fee</h2>
+                <input
+                  type="text"
+                  placeholder="General Candidates : 100"
+                  class="box"
+                />
+                <input
+                  type="text"
+                  placeholder="SC/ST Candidates : 0"
+                  class="box"
+                />
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <h2>Important Dates</h2>
+                <input
+                  type="text"
+                  placeholder="Starting Dates : 15-07-2023"
+                  class="box"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Dates : 15-08-2023"
+                  class="box"
+                />
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <h2>Age Limit</h2>
+                <input
+                  type="text"
+                  placeholder="Minimum Age Limit : 18"
+                  class="box"
+                />
+                <input
+                  type="text"
+                  placeholder="Maximum Age Limit : 35"
+                  class="box"
+                />
+              </div>
+            </div>
+
+            <style>
+              .btns-links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                gap: 2rem;
+              }
+              .btns-links h4 {
+                font-size: 1.8rem;
+                color: #130f40;
+                font-weight: bold;
+                margin-top: 2rem;
+              }
+              .btns-links .box {
+                width: 30rem;
+                height: 4rem;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                background-color: #fff;
+                border: 0.1rem solid rgba(0, 0, 0, 0.1);
+                border-radius: 0.5rem;
+                margin: 1rem;
+              }
+            </style>
+
+            <div class="btns-links">
+              <div>
+                <h4>official website's link</h4>
+                <input
+                  type="text"
+                  placeholder="official website link"
+                  class="box"
+                />
+              </div>
+              <div>
+                <h4>notification</h4>
+                <input
+                  type="text"
+                  placeholder="notification link"
+                  class="box"
+                />
+              </div>
+              <div>
+                <h4>apply mode</h4>
+                <input type="text" placeholder="apply link" class="box" />
+              </div>
+            </div>
+            <button type="submit" class="btn">submit</button>
+          </form>
+        </div>
+        <!-- home section  -->
+
+        <style>
+          .post-home {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: 1rem;
+          }
+          .post-home .box {
+            text-align: center;
+            padding: 1rem;
+            background-color: #fff;
+            border: 0.1rem solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            margin: 2rem;
+            margin-bottom: 1rem;
+          }
+        </style>
+        <div class="post-home">
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+
+          <div class="box">
+            <h2>Job Title Name Lorem ipsum dolor sit amet.</h2>
+            <div class="btn"><a href="#">update</a></div>
+            <div class="btn"><a href="#">delete</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
